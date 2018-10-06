@@ -34,5 +34,5 @@ class AuthorDetail(DeleteView):
     model = Author
 
 
-class Publisher(DeleteView):
+class PublisherDetail(DeleteView):
     model = Publisher
