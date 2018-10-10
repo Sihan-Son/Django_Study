@@ -3,8 +3,8 @@
 {% block content %}
     <h2>Publisher List</h2>
     <ul>
-        {% for book in object_list %}
-            <li><a href="{% url 'books:publisher_detail' publisher.id %}">{{ publisher.namw }}</a> </li>
+        {% for publisher in object_list %}
+            <li><a href="{% url 'books:publisher_detail' publisher.id %}">{{ publisher.name }}</a></li>
         {% endfor %}
     </ul>
-{% endblock %}
+{% endblock content %}
